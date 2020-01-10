@@ -125,6 +125,18 @@ h1
 
 }
 
+#homeImg
+{
+	width: 150px;
+	height: 150px;
+}
+
+#awayImg
+{
+	width: 150px;
+	height: 150px;
+}
+
 .teamName
 {
 	display: block;
