@@ -408,4 +408,4 @@ app.get("/", function(req, res){
 	pd1: pd1, pd2: pd2, pd3: pd3, pd4: pd4, pd5: pd5, pd6: pd6, pd7: pd7, pd8: pd8, pd9: pd9, pd10: pd10, pd11: pd11, pd12: pd12, pd13: pd13, pd14: pd14, pd15: pd15, pd16: pd16, pd17: pd17, pd18: pd18, pd19: pd19, pd20: pd20, pd21: pd21, pd22: pd22, pd23: pd23});
 });
 
-app.listen(3000);
+app.listen(process.env.PORT, process.env.IP);
