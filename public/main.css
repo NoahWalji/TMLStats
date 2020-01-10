@@ -180,7 +180,7 @@ table
 
 }
 
-th
+td
 {
 	font-size: 25px;
 	color: black;
@@ -189,6 +189,8 @@ th
     margin-right:auto;
     padding-bottom: 3%;
     border-bottom: 1px solid #ddd;
+    word-wrap: break-word;
+
 
 }
 
