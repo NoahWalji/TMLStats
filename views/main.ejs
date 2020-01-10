@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="main.css">
+	<link href="https://fonts.googleapis.com/css?family=Graduate&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<title>TML Stats: Current Toronto Maple Leafs Statistics</title>
+</head>
+<body>
+
+	<nav id="navbar">
+		<ul class="nav-items">
+			<li class="nav-item"><a href="#roster" id="roster-nav">Roster</a></li>
+			<li class="nav-item"><a href="#home" id="home-nav">Home</a></li>
+			<li class ="nav-item"><a href="#advstats" id="advstats-nav">Advanced Stats</a></li>
+		</ul>
+	</nav>
+	<h1 id="title">T.M.L STATS</h1>
+	<p id="caption">Your one stop shop to all things Toronto Maple Leafs!</p>
+
+  <p id="nextgame">Next Game</p>
+
+  <div id="game">
+    <div id="away">
+      <img src="/teams/10.png" id="awayImg">
+      <span class="teamName" id="awayName"><%=awayTeam%></span>
+      <span class="teamStat" id="awayStat"><%=awayTeamStats%></span>
+    </div>
+
+    <p id="at">At</p>
+
+    <div id="home">
+      <img src="/teams/10.png" id="homeImg">
+      <span class="teamName" id="homeName"><%=homeTeam%></span>
+      <span class="teamStat" id="homeStat"><%=homeTeamStats%></span>
+    </div>
+  </div>
+
+  <p id="gameTime">Game Time</p>
+
+
+  <table style="width:50%">
+  	<tr>
+      <th class="top-title">Games Played:</th>
+   	  <th class="top-data"><%=gamesPlayed%></th> 
+  	</tr>
+  	<tr>
+      <th class="title">Wins:</th>
+   	  <th class="data", id="wins"><%=wins%></th> 
+  	</tr>
+  	<tr>
+      <th class="title">Losses:</th>
+   	  <th class="data", id="losses"><%=losses%></th> 
+  	</tr>
+  	<tr>
+      <th class="title">OT Losses:</th>
+   	  <th class="data", id="losses"><%=otlosses%></th> 
+  	</tr>
+  	<tr>
+      <th class="title">Points:</th>
+   	  <th class="data"><%=points%></th> 
+  	</tr>
+  	<tr>
+      <th class="title">Most Wins:</th>
+   	  <th class="data"><%=winposition%> In The League</th> 
+  	</tr>
+  	<tr>
+      <th class="title">Least Losses:</th>
+   	  <th class="data"><%=lossposition%> In The League</th> 
+  	</tr>
+  	<tr>
+      <th class="title">Most Points:</th>
+   	  <th class="data"><%=pointposition%> In The League</th> 
+  	</tr>
+  </table>
+	<h1 id="roster">ROSTER</h1>
+
+  <p id="rostersub">Click On A Player For Individual Stats</p>
+
+  <div class="player-pictures">
+  <p class="offense">Offensive Players</p>
+  <div class="row" align="middle">
+      <figure>
+        <a href="#1" rel="modal:open">
+          <img class="players"  src="/offensive_players/alex_kerfoot.jpg" >
+        </a>
+        <figcaption>Alex Kerfoot<a href=""></a></figcaption>
+      </figure>
+
+      <figure>
+        <a href="#2" rel="modal:open">
+          <img class="players"  src="/offensive_players/andreas_johnsson.jpg">
+        </a>
+        <figcaption>Andreas Johnsson<a href=""></a></figcaption>
+      </figure>
+
+      <figure>
+        <a href="#3" rel="modal:open">
+          <img class="players"  src="/offensive_players/auston_matthews.jpg">
+        </a>
+        <figcaption>Auston Matthews<a href=""></a></figcaption> 
+      </figure>
+
+      <figure>
+        <a href="#4" rel="modal:open">
+          <img class="players"  src="/offensive_players/dmytro_timashov.jpg">
+        </a> 
+        <figcaption>Dmytro Timashov<a href=""></a></figcaption> 
+      </figure>
+
+      <figure>
+        <a href="#5" rel="modal:open">
+          <img class="players"  src="/offensive_players/frederik_gauthier.jpg">
+          <figcaption>Frederik Gauthier<a href=""></a></figcaption> 
+        </a>
+      </figure>
+
+      <figure>
+        <a href="#6" rel="modal:open">
+          <img class="players"  src="/offensive_players/ilya_mikheyev.jpg">
+        </a>
+        <figcaption>Ilya Mikheyev<a href=""></a></figcaption>
+      </figure>
+
+      <figure>
+        <a href="#7" rel="modal:open">
+          <img class="players"  src="/offensive_players/jason_spezza.jpg">
+        </a>
+        <figcaption>Jason Spezza<a href=""></a></figcaption>
+      </figure>
+
+      <figure>
+        <a href="#8" rel="modal:open">
+          <img class="players"  src="/offensive_players/john_tavares.jpg">
+        </a>
+        <figcaption>John Tavares<a href=""></a></figcaption>
+      </figure>
+
+      <figure>
+        <a href="#9" rel="modal:open">
+          <img class="players"  src="/offensive_players/kasperi_kapanen.jpg">
+        </a>
+        <figcaption>Kasperi Kapanen<a href=""></a></figcaption>
+      </figure>
+
+      <figure>
+        <a href="#10" rel="modal:open">
+          <img class="players"  src="/offensive_players/mitch_marner.jpg">
+        </a>
+        <figcaption>Mitch Marner<a href=""></a></figcaption>
+      </figure>
+
+      <figure>
+        <a href="#11" rel="modal:open">
+          <img class="players"  src="/offensive_players/pierre_engvall.jpg">
+        </a>
+        <figcaption>Pierre Engvall<a href=""></a></figcaption>
+      </figure>
+
+      <figure>
+        <a href="#12" rel="modal:open">
+          <img class="players"  src="/offensive_players/trevor_moore.jpg">
+        </a>
+        <figcaption>Trevor Moore<a href=""></a></figcaption>
+      </figure>
+
+      <figure>
+        <a href="#13" rel="modal:open">
+          <img class="players"  src="/offensive_players/william_nylander.jpg">
+        </a>
+        <figcaption>William Nylander<a href=""></a></figcaption>
+      </figure>
+
+      <figure>
+        <a href="#14" rel="modal:open">
+          <img class="players"  src="/offensive_players/zach_hyman.jpg">
+        </a>
+        <figcaption>Zach Hyman<a href=""></a></figcaption> 
+      </figure>
+  </div>
+
+  <p class="offense">Defensive Players</p>
+
+  <div class="row" align="middle">
+      <figure>
+        <a href="#15" rel="modal:open">
+          <img class="players" src="/defensive_players/cody_ceci.jpg">
+        </a>
+        <figcaption>Cody Ceci<a href=""></a></figcaption>
+      </figure>
+
+    <figure>
+      <a href="#16" rel="modal:open">
+        <img class="players"  src="/defensive_players/jake_muzzin.jpg">
+      </a>
+      <figcaption>Jake Muzzin<a href=""></a></figcaption>      
+    </figure>
+
+    <figure>
+      <a href="#17" rel="modal:open">
+        <img class="players"  src="/defensive_players/justin_holl.jpg">
+      </a>
+      <figcaption>Justin Holl<a href=""></a></figcaption>
+    </figure>
+
+    <figure>
+      <a href="#18" rel="modal:open">
+        <img class="players"  src="/defensive_players/martin_marincin.jpg">
+      </a>
+      <figcaption>Martin Marincin<a href=""></a></figcaption>  
+    </figure>
+
+    <figure>
+      <a href="#19" rel="modal:open">
+        <img class="players"  src="/defensive_players/morgan_rielly.jpg">
+      </a>
+      <figcaption>Morgan Rielly<a href=""></a></figcaption>     
+    </figure>
+
+    <figure>
+      <a href="#20" rel="modal:open">
+        <img class="players"  src="/defensive_players/travis_dermott.jpg">
+      </a>
+      <figcaption>Travis Dermott<a href=""></a></figcaption>
+    </figure>
+
+    <figure>
+      <a href="#21" rel="modal:open">
+        <img class="players"  src="/defensive_players/tyson_barrie.jpg">
+      </a>
+      <figcaption>Tyson Barrie<a href=""></a></figcaption>
+    </figure>
+
+  </div>
+
+  <p class="offense">Goalies</p>
+  <div class="row" align="middle">
+    <figure>
+      <a href="#22" rel="modal:open">
+        <img class="players"  src="/goalies/frederik_andersen.jpg">
+      </a>
+      <figcaption>Frederik Andersen<a href=""></a></figcaption>
+    </figure>
+
+    <figure>
+      <a href="#23" rel="modal:open">
+        <img class="players"  src="/goalies/michael_hutchinson.jpg">
+      </a>
+      <figcaption>Michael Hutchinson<a href=""></a></figcaption>
+    </figure>
+
+  </div>
+</div>
+
+<h1 id="advstats">ADVANCED STATS</h1>
+  <table style="width:50%">
+  	<tr>
+      <th class="top-title">Shots:</th>
+   	  <th class="top-data"><%=shotsPerGame%> (per game)</th> 
+  	</tr>
+  	<tr>
+      <th class="title">Shots Allowed:</th>
+   	  <th class="data"><%=shotsAllowed%> (per game)</th> 
+  	</tr>
+  	<tr>
+      <th class="title">Goals:</th>
+   	  <th class="data"><%=goalsPerGame%> (per game)</th> 
+  	</tr>
+  	<tr>
+      <th class="title">Goals Against:</th>
+   	  <th class="data"><%=goalsAgainstPerGame%> (per game)</th> 
+  	</tr>
+  	<tr>
+      <th class="title">Powerplay Goals:</th>
+   	  <th class="data"><%=ppGoals%></th> 
+  	</tr>
+  	<tr>
+      <th class="title">Powerplay Goals Against:</th>
+   	  <th class="data"><%=ppAgainstGoals%></th> 
+  	</tr>
+  	<tr>
+      <th class="title">Faceoff Wins:</th>
+   	  <th class="data"><%=faceOffWinPercent%>%</th> 
+  	</tr>
+  	<tr>
+  </table>
+
+  <div id="1" class="modal">
+    <h1>Alex Kerfoot</h1>
+    <p>Games Played: <%=pd1[0]%></p>
+    <p>Goals: <%=pd1[1]%></p>
+    <p>Assists: <%=pd1[2]%></p>
+    <p>Shots: <%=pd1[3]%></p>
+    <a href="#" rel="modal:close">Close</a>
+  </div>
+
+  <div id="2" class="modal">
+    <h1>Andreas Johnsson</h1>
+    <p>Games Played: <%=pd2[0]%></p>
+    <p>Goals: <%=pd2[1]%></p>
+    <p>Assists: <%=pd2[2]%></p>
+    <p>Shots: <%=pd2[3]%></p>
+    <a href="#" rel="modal:close">Close</a>
+  </div>
+
+  <div id="3" class="modal">
+    <h1>Auston Matthews</h1>
+    <p>Games Played: <%=pd3[0]%></p>
+    <p>Goals: <%=pd3[1]%></p>
+    <p>Assists: <%=pd3[2]%></p>
+    <p>Shots: <%=pd3[3]%></p>
+    <a href="#" rel="modal:close">Close</a>
+  </div>
+
+  <div id="4" class="modal">
+    <h1>Dmytro Timashov</h1>
+    <p>Games Played: <%=pd4[0]%></p>
+    <p>Goals: <%=pd4[1]%></p>
+    <p>Assists: <%=pd4[2]%></p>
+    <p>Shots: <%=pd4[3]%></p>
+    <a href="#" rel="modal:close">Close</a>
+  </div>
+
+  <div id="5" class="modal">
+    <h1>Frederik Gauthier</h1>
+    <p>Games Played: <%=pd5[0]%></p>
+    <p>Goals: <%=pd5[1]%></p>
+    <p>Assists: <%=pd5[2]%></p>
+    <p>Shots: <%=pd5[3]%></p>
+    <a href="#" rel="modal:close">Close</a>
+  </div>
+
+  <div id="6" class="modal">
+    <h1>Ilya Mikheyev</h1>
+    <p>Games Played: <%=pd6[0]%></p>
+    <p>Goals: <%=pd6[1]%></p>
+    <p>Assists: <%=pd6[2]%></p>
+    <p>Shots: <%=pd6[3]%></p>
+    <a href="#" rel="modal:close">Close</a>
+  </div>
+
+  <div id="7" class="modal">
+    <h1>Jason Spezza</h1>
+    <p>Games Played: <%=pd7[0]%></p>
+    <p>Goals: <%=pd7[1]%></p>
+    <p>Assists: <%=pd7[2]%></p>
+    <p>Shots: <%=pd7[3]%></p>
+    <a href="#" rel="modal:close">Close</a>
+  </div>
+
+  <div id="8" class="modal">
+    <h1>John Tavares</h1>
+    <p>Games Played: <%=pd8[0]%></p>
+    <p>Goals: <%=pd8[1]%></p>
+    <p>Assists: <%=pd8[2]%></p>
+    <p>Shots: <%=pd8[3]%></p>
+    <a href="#" rel="modal:close">Close</a>
+  </div>
+
+  <div id="9" class="modal">
+    <h1>Kasperi Kapanen</h1>
+    <p>Games Played: <%=pd9[0]%></p>
+    <p>Goals: <%=pd9[1]%></p>
+    <p>Assists: <%=pd9[2]%></p>
+    <p>Shots: <%=pd9[3]%></p>
+    <a href="#" rel="modal:close">Close</a>
+  </div>
+
+  <div id="10" class="modal">
+    <h1>Mitch Marner</h1>
+    <p>Games Played: <%=pd10[0]%></p>
+    <p>Goals: <%=pd10[1]%></p>
+    <p>Assists: <%=pd10[2]%></p>
+    <p>Shots: <%=pd10[3]%></p>
+    <a href="#" rel="modal:close">Close</a>
+  </div>
+
+  <div id="11" class="modal">
+    <h1>Pierre Engvall</h1>
+    <p>Games Played: <%=pd11[0]%></p>
+    <p>Goals: <%=pd11[1]%></p>
+    <p>Assists: <%=pd11[2]%></p>
+    <p>Shots: <%=pd11[3]%></p>
+    <a href="#" rel="modal:close">Close</a>
+  </div>
+
+  <div id="12" class="modal">
+    <h1>Trevor Mooret</h1>
+    <p>Games Played: <%=pd12[0]%></p>
+    <p>Goals: <%=pd12[1]%></p>
+    <p>Assists: <%=pd12[2]%></p>
+    <p>Shots: <%=pd12[3]%></p>
+    <a href="#" rel="modal:close">Close</a>
+  </div>
+
+  <div id="13" class="modal">
+    <h1>William Nylander</h1>
+    <p>Games Played: <%=pd13[0]%></p>
+    <p>Goals: <%=pd13[1]%></p>
+    <p>Assists: <%=pd13[2]%></p>
+    <p>Shots: <%=pd13[3]%></p>
+    <a href="#" rel="modal:close">Close</a>
+  </div>
+
+  <div id="14" class="modal">
+    <h1>Zach Hyman</h1>
+    <p>Games Played: <%=pd14[0]%></p>
+    <p>Goals: <%=pd14[1]%></p>
+    <p>Assists: <%=pd14[2]%></p>
+    <p>Shots: <%=pd14[3]%></p>
+    <a href="#" rel="modal:close">Close</a>
+  </div>
+
+  <div id="15" class="modal">
+    <h1>Cody Ceci</h1>
+    <p>Games Played: <%=pd15[0]%></p>
+    <p>Goals: <%=pd15[1]%></p>
+    <p>Assists: <%=pd15[2]%></p>
+    <p>Shots: <%=pd15[3]%></p>
+    <a href="#" rel="modal:close">Close</a>
+  </div>
+
+  <div id="16" class="modal">
+    <h1>Jake Muzzin</h1>
+    <p>Games Played: <%=pd16[0]%></p>
+    <p>Goals: <%=pd16[1]%></p>
+    <p>Assists: <%=pd16[2]%></p>
+    <p>Shots: <%=pd16[3]%></p>
+    <a href="#" rel="modal:close">Close</a>
+  </div>
+
+  <div id="17" class="modal">
+    <h1>Justin Holl</h1>
+    <p>Games Played: <%=pd17[0]%></p>
+    <p>Goals: <%=pd17[1]%></p>
+    <p>Assists: <%=pd17[2]%></p>
+    <p>Shots: <%=pd17[3]%></p>
+    <a href="#" rel="modal:close">Close</a>
+  </div>
+
+  <div id="18" class="modal">
+    <h1>Martin Marincin</h1>
+    <p>Games Played: <%=pd18[0]%></p>
+    <p>Goals: <%=pd18[1]%></p>
+    <p>Assists: <%=pd18[2]%></p>
+    <p>Shots: <%=pd18[3]%></p>
+    <a href="#" rel="modal:close">Close</a>
+  </div>
+
+  <div id="19" class="modal">
+    <h1>Morgan Rielly</h1>
+    <p>Games Played: <%=pd19[0]%></p>
+    <p>Goals: <%=pd19[1]%></p>
+    <p>Assists: <%=pd19[2]%></p>
+    <p>Shots: <%=pd19[3]%></p>
+    <a href="#" rel="modal:close">Close</a>
+  </div>
+
+  <div id="20" class="modal">
+    <h1>Travis Dermott</h1>
+    <p>Games Played: <%=pd20[0]%></p>
+    <p>Goals: <%=pd20[1]%></p>
+    <p>Assists: <%=pd20[2]%></p>
+    <p>Shots: <%=pd20[3]%></p>
+    <a href="#" rel="modal:close">Close</a>
+  </div>
+
+  <div id="21" class="modal">
+    <h1>Tyson Barrie</h1>
+    <p>Games Played: <%=pd21[0]%></p>
+    <p>Goals: <%=pd21[1]%></p>
+    <p>Assists: <%=pd21[2]%></p>
+    <p>Shots: <%=pd21[3]%></p>
+    <a href="#" rel="modal:close">Close</a>
+  </div>
+
+  <div id="22" class="modal">
+    <h1>Frederik Andersen</h1>
+    <p>Games Played: <%=pd22[0]%></p>
+    <p>Wins: <%=pd22[1]%></p>
+    <p>Losses: <%=pd22[2]%></p>
+    <p>Shutouts: <%=pd22[3]%></p>
+    <a href="#" rel="modal:close">Close</a>
+  </div>
+
+  <div id="23" class="modal">
+    <h1>Michael Hutchinson</h1>
+    <p>Games Played: <%=pd23[0]%></p>
+    <p>Wins: <%=pd23[1]%></p>
+    <p>Losses: <%=pd23[2]%></p>
+    <p>Shutouts: <%=pd23[3]%></p>
+    <a href="#" rel="modal:close">Close</a>
+  </div>
+
+
+  <p id="homeID" style="display:none"><%= homeID %></p>
+  <p id="awayID" style="display:none"><%= awayID %></p>
+  <p id="gameDate" style="display:none"><%= gameDate %></p>
+
+  <div id="footer">
+    <p id="footertext1">Created by Noah Walji 2019</p>
+    <p id="footertext2">All data accessed through the NHL's Public API</p>
+  </div>
+
+<script type="text/javascript" src="jquery-3.4.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
