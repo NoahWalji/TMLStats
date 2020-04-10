@@ -3,8 +3,8 @@
 // ======================
 // ----> Next Game <----
 // ======================
-$("#awayImg").attr("src", "/teams/" + $("#awayID").text() + ".png");
-$("#homeImg").attr("src", "/teams/" + $("#homeID").text() + ".png");
+//$("#awayImg").attr("src", "/teams/" + $("#awayID").text() + ".png");
+//$("#homeImg").attr("src", "/teams/" + $("#homeID").text() + ".png");
 
 let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 var gameDate = new Date($("#gameDate").text());
@@ -30,7 +30,7 @@ else
 
 }
 
-$("#gameTime").text(gameTime);
+//$("#gameTime").text(gameTime);
 
 
 
@@ -66,21 +66,21 @@ window.addEventListener('scroll', stickyNav)
 // ----> Animated Scroll Nav <----
 // ===============================
 
-$("#roster-nav").click(function(event) 
+$("#roster-nav").click(function(event)
 {
     event.preventDefault();
 
     $('html, body').animate({scrollTop: $("#roster").offset().top}, 1000);
 });
 
-$("#home-nav").click(function(event) 
+$("#home-nav").click(function(event)
 {
     event.preventDefault();
 
     $('html, body').animate({scrollTop: $("#title").offset().top}, 1000);
 });
 
-$("#advstats-nav").click(function(event) 
+$("#advstats-nav").click(function(event)
 {
     event.preventDefault();
 
@@ -98,7 +98,7 @@ var btn = document.getElementsByClassName("myBtn");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close");
 
-// When the user clicks the button, open the modal 
+// When the user clicks the button, open the modal
 btn[0].onclick = function() {
     modal[0].style.display = "block";
 }
@@ -114,5 +114,3 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
-
-
