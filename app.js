@@ -403,7 +403,7 @@ request('https://statsapi.web.nhl.com/api/v1/teams/10/stats', function (error, r
 
 app.get("/", function(req, res){
 	res.render("main.ejs", {gamesPlayed: gamesPlayed, wins: wins, losses: losses, otlosses: otlosses, points: points, winposition: winposition, lossposition: lossposition,
-	pointposition: pointposition, awayTeam: awayTeam, awayTeamStats: awayTeamStats, awayID: awayID, homeTeam: homeTeam, homeTeamStats: homeTeamStats, homeID: homeID, gameDate: gameDate,
+	pointposition: pointposition,
 	goalsPerGame: goalsPerGame, goalsAgainstPerGame: goalsAgainstPerGame, ppGoals: ppGoals, ppAgainstGoals: ppAgainstGoals, shotsPerGame: shotsPerGame, shotsAllowed: shotsAllowed, faceOffWinPercent: faceOffWinPercent,
 	pd1: pd1, pd2: pd2, pd3: pd3, pd4: pd4, pd5: pd5, pd6: pd6, pd7: pd7, pd8: pd8, pd9: pd9, pd10: pd10, pd11: pd11, pd12: pd12, pd13: pd13, pd14: pd14, pd15: pd15, pd16: pd16, pd17: pd17, pd18: pd18, pd19: pd19, pd20: pd20, pd21: pd21, pd22: pd22, pd23: pd23});
 });
