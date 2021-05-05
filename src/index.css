@@ -1,0 +1,136 @@
+body {
+  font-family: arial,sans-serif-light,sans-serif;
+  background-color: rgba(232, 241, 255);
+  background: url('./bg.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Game */
+.game {
+  margin: auto;
+  width: 50%;
+  padding: 5%;
+  background-color: #ebeef2;
+  border-radius: 50px;
+  opacity: 90%;
+}
+
+.subText {
+  text-align: center;
+  font-size: 20px;
+}
+
+#awayTeam, #homeTeam 
+{
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+  width: 50%;
+
+}
+
+.teamName, .teamScore   {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.teamImg {
+  position: relative;
+  width:50%;
+  height:50%;
+  object-fit: scale-down;
+  box-shadow: 10px 10px 5px #aaaaaa;
+
+}
+
+/* Standings */
+.standings {
+  overflow: scroll;
+  margin: auto;
+  margin-top: 1%;
+  width: 90%;
+  padding-bottom: 1%;
+  background-color: #ebeef2;
+  border-radius: 50px;
+  opacity: 90%;
+  text-align: center;;
+}
+
+.standingsTable {
+  overflow-x:scroll;
+  width: 60%;
+}
+
+.standingsImg {
+  width: 30px;
+  height: 30px;
+}
+
+/* Player */
+.playerGroup {
+  text-align: center;
+  background-color: #ebeef2;
+  border-radius: 50px;
+  opacity: 90%;
+}
+
+
+.player {
+  display: inline-block;
+  margin: 1%;
+  opacity: 100% !important;
+}
+
+.player-img {
+  border-radius: 50%;
+}
+
+.player-name {
+  text-align: center;
+}
+
+/* Player Detail*/
+.player-container {
+  overflow: scroll;
+  text-align: center;
+  background-color: #ebeef2;
+  border-radius: 50px;
+  opacity: 90%;
+  margin-top: 5%;
+  padding-bottom: 10%;
+}
+.details-img {
+  border-radius: 50%;
+}
+
+.details-title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+  overflow:hidden;
+  
+}
+
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
