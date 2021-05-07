@@ -9,12 +9,14 @@ class Game extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            subText: this.props.subText
+            isLive: false,
+            subText: ""
         }
     }
 
     async componentDidMount() {
         if (this.props.liveGame) {
+            this.setState({isLive: true})
             this.getSubText()
         }  
     }
@@ -40,7 +42,7 @@ class Game extends React.Component {
                 <div className="game">
                     <Team loaded={this.props.loaded} type="awayTeam" id={this.props.awayTeam.id} abbreviation={this.props.awayTeam.abbreviation} score={this.props.awayTeamScore} stat={this.props.awayTeamStat}/>
                     <Team  loaded={this.props.loaded} type="homeTeam" id={this.props.homeTeam.id} abbreviation={this.props.homeTeam.abbreviation} score={this.props.homeTeamScore} stat={this.props.homeTeamStat}/>
-                    <p className="subText">{this.state.subText}</p>
+                    <p className="subText">{this.state.isLive ? this.state.subText : this.props.subText}</p>
                 </div>
             );
         }
