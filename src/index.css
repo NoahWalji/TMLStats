@@ -134,3 +134,12 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
+
+.back-button {
+  text-decoration: none;
+  background-color: #00205B;
+  color: white;
+  padding: 2%;
+  float: left;
+  border-radius: 5px;
+}

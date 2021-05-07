@@ -83,6 +83,7 @@ class PlayerDetails extends React.Component {
 
             return (
                 <div className="player-container">
+                    <a href="/" className="back-button">←</a>
                     <img src={player.officialImageSrc == null ? "https://cms.nhl.bamgrid.com/images/headshots/current/168x168/skater.jpg" : player.officialImageSrc} alt=""
                     className="details-img"/>
                     <p className="details-title">{player.firstName} {player.lastName} (#{player.jerseyNumber})</p>
