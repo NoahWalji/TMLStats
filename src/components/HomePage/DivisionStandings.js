@@ -36,13 +36,13 @@ class DivisionStandings extends React.Component {
                             {this.props.teams
                             .sort((a, b) => a.divisionRank.rank - b.divisionRank.rank)
                             .map((team,index) =>
-                                <tr key={team.team.id}>
+                                <tr className="teamRow" key={team.team.id}>
                                     <td className="teamNameCell"><img className="standingsImg" src={process.env.PUBLIC_URL + '/assets/' + team.team.id + ".png"} alt="Loading"/> <p className="standingsName">{team.team.name}</p></td>
                                     <td>{team.stats.gamesPlayed}</td>
                                     <td>{team.stats.standings.wins}</td>
                                     <td>{team.stats.standings.losses}</td>
                                     <td>{team.stats.standings.overtimeLosses}</td>
-                                    <td>{team.stats.standings.points}</td>
+                                    <td className="teamPoints">{team.stats.standings.points}</td>
                                     <td>{team.stats.miscellaneous.goalsFor}</td>
                                     <td>{team.stats.miscellaneous.goalsAgainst}</td>
                                     <td>{team.stats.miscellaneous.goalsFor - team.stats.miscellaneous.goalsAgainst}</td>
