@@ -107,6 +107,16 @@ body {
 
 .player-img {
   border-radius: 50%;
+  -webkit-transform: scale(1);
+	transform: scale(1);
+
+}
+
+.player-img:hover {
+  -webkit-transform: scale(1.1);
+	transform: scale(1.1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }
 
 .player-name {
@@ -163,10 +173,12 @@ tr:nth-child(even) {
 }
 
 .back-button {
+  display: block;
   text-decoration: none;
   background-color: #00205B;
   color: white;
   padding: 2%;
-  float: left;
+  text-align: left;
+  width: 1%;
   border-radius: 5px;
 }
