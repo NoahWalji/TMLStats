@@ -35,9 +35,9 @@ class Home extends React.Component {
     async componentDidMount() {
         const headers = {'Authorization': 'Basic '+btoa(process.env.REACT_APP_API_USERNAME + ":" + process.env.REACT_APP_API_PASSWORD)}
         const divisionURL = "https://api.mysportsfeeds.com/v2.1/pull/nhl/2021-regular/standings.json?team=2,12,13,14,21,23,24";
-        const forwardURL = "https://api.mysportsfeeds.com/v2.1/pull/nhl/current/player_stats_totals.json?team=TOR&rosterstatus=assigned-to-roster&position=LW,RW,C"
-        const defenseURL = "https://api.mysportsfeeds.com/v2.1/pull/nhl/current/player_stats_totals.json?team=TOR&rosterstatus=assigned-to-roster&position=D"
-        const goalieURL = "https://api.mysportsfeeds.com/v2.1/pull/nhl/current/player_stats_totals.json?team=TOR&rosterstatus=assigned-to-roster&position=G"
+        const forwardURL = "https://api.mysportsfeeds.com/v2.1/pull/nhl/2021-regular/player_stats_totals.json?team=TOR&rosterstatus=assigned-to-roster&position=LW,RW,C"
+        const defenseURL = "https://api.mysportsfeeds.com/v2.1/pull/nhl/2021-regular/player_stats_totals.json?team=TOR&rosterstatus=assigned-to-roster&position=D"
+        const goalieURL = "https://api.mysportsfeeds.com/v2.1/pull/nhl/2021-regular/player_stats_totals.json?team=TOR&rosterstatus=assigned-to-roster&position=G"
         const gameURL = "https://api.mysportsfeeds.com/v2.1/pull/nhl/current/games.json?status=unplayed,in-progress&team=TOR"
 
         trackPromise(
