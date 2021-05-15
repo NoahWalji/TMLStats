@@ -26,7 +26,7 @@ class PlayerDetails extends React.Component {
 
     async componentDidMount() {
         let { id } = this.props.match.params
-        const url = "https://api.mysportsfeeds.com/v2.1/pull/nhl/current/player_stats_totals.json?player=" + id;
+        const url = "https://api.mysportsfeeds.com/v2.1/pull/nhl/2021-regular/player_stats_totals.json?player=" + id;
 
         trackPromise(
             fetch(url, { 
