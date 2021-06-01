@@ -36,13 +36,25 @@ class Game extends React.Component {
     render() {
 
         if (this.props.loaded) {
-            return (
-                <div className="game">
-                    <Team loaded={this.props.loaded} type="awayTeam" id={this.props.awayTeam.id} abbreviation={this.props.awayTeam.abbreviation} score={this.props.awayTeamScore} stat={this.props.awayTeamStat}/>
-                    <Team  loaded={this.props.loaded} type="homeTeam" id={this.props.homeTeam.id} abbreviation={this.props.homeTeam.abbreviation} score={this.props.homeTeamScore} stat={this.props.homeTeamStat}/>
-                    <p className="subText">{this.state.subText !== "" ? this.state.subText : this.props.subText}</p>
-                </div>
-            );
+            if (this.props.noGame === false) {
+                return (
+                    <div className="game">
+                        <Team loaded={this.props.loaded} type="awayTeam" id={this.props.awayTeam.id} abbreviation={this.props.awayTeam.abbreviation} score={this.props.awayTeamScore} stat={this.props.awayTeamStat}/>
+                        <Team  loaded={this.props.loaded} type="homeTeam" id={this.props.homeTeam.id} abbreviation={this.props.homeTeam.abbreviation} score={this.props.homeTeamScore} stat={this.props.homeTeamStat}/>
+                        <p className="subText">{this.state.subText !== "" ? this.state.subText : this.props.subText}</p>
+                    </div>
+                );
+            }
+
+            else {
+                return (
+                    <div className="game">
+                        <p className="subText">The Toronto Maple Leafs Season Has Ended. There are no currently scheduled games.</p>
+                        <p className="subText">2021 Season Statistics Can Be Viewed Below.</p>
+                    </div>
+                );    
+            }
+
         }
 
         else {
